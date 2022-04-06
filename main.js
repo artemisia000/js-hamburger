@@ -1,19 +1,20 @@
-const menu_icon = document.querySelector(`.fa-bars`);
-
-const menu_card = document.querySelector(`.fa-times`);
-
-const menu = document.querySelector(`.hamburger-menu`);
+console.log('JS ok');
 
 
+//Ref
+//Mi prendo tutte le a figlie dirette di header-right
+const btnMenu = document.querySelector('.header-right > a');
+const hamburger = document.querySelector('.hamburger-menu');
+const btnClose = document.querySelector('.close');
 
-menu_icon.addEventListener(`click`, function(){
-    menu.classList.toggle(`active`);
 
-})
+btnMenu.addEventListener('click', function() {
+    hamburger.classList.add('active');
+});
 
-menu_card.addEventListener(`click`, function(){
-    menu.classList.toggle(`active`);
+btnClose.addEventListener('click', function() {
+    hamburger.classList.remove('active');
+});
 
-})
 
 
